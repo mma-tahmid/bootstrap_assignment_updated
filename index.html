@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+    <title>Super Shop</title>
+</head>
+
+<body>
+
+
+
+    <!-- Navbar codes -->
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar mb-4 shadow bg-light" id="navbar-container">
+        <div class="container align-items-center">
+            <a class="navbar-brand" href="#">
+                <nav class="navbar">
+                    <a class="navbar-brand fw-semibold" href="#">
+                        Super <span style="color: rgb(211, 155, 42);">Shop</span>
+                    </a>
+                </nav>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse gap-2" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Highlights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Sign in</a></li>
+                            <li><a class="dropdown-item" href="#">Sign up</a></li>
+                        </ul>
+                    <li>
+                        <div class="form-check form-switch bg-body-secondary">
+                            <input class="form-check-input" type="checkbox" role="switch" id="color-mode-toggle"
+                                checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Color mode</label>
+                        </div>
+                    </li>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success bg-body-tertiary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+
+    <div class="container mb-5">
+
+        <section class="hero-container d-flex justify-content-between align-items-center gap-4">
+
+            <div>
+
+                <h1>Welcome to Super Shop</h1>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi dolorum, minus tempore mollitia unde
+                    pariatur, corporis, consequuntur vero inventore incidunt dicta dignissimos sint perspiciatis
+                    obcaecati temporibus fugiat? Nisi, saepe sequi.</p>
+
+                <!-- Modal Sign Up Form -->
+
+                <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Sign Up Now</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+
+                                <form class="row g-3 needs-validation" novalidate>
+                                    <div class="col-md-4">
+                                        <label for="validationCustom01" class="form-label">First name</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="Mark"
+                                            required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="validationCustom02" class="form-label">Last name</label>
+                                        <input type="text" class="form-control" id="validationCustom02" value="Otto"
+                                            required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="validationCustomUsername" class="form-label">Username</label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                            <input type="text" class="form-control" id="validationCustomUsername"
+                                                aria-describedby="inputGroupPrepend" required>
+                                            <div class="invalid-feedback">
+                                                Please choose a username.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="validationCustom03" class="form-label">City</label>
+                                        <input type="text" class="form-control" id="validationCustom03" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid city.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="validationCustom04" class="form-label">State</label>
+                                        <select class="form-select" id="validationCustom04" required>
+                                            <option selected disabled value="">Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please select a valid state.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="validationCustom05" class="form-label">Zip</label>
+                                        <input type="text" class="form-control" id="validationCustom05" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid zip.
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
+                                                required>
+                                            <label class="form-check-label" for="invalidCheck">
+                                                Agree to terms and conditions
+                                            </label>
+                                            <div class="invalid-feedback">
+                                                You must agree before submitting.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">Verify</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  OTP Form -->
+
+                <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Enter OTP</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="container height-100 d-flex justify-content-center align-items-center">
+                                    <div class="position-relative">
+                                        <div class="card p-2 text-center">
+                                            <h6>Please enter the one time password <br> to verify your account</h6>
+                                            <div> <span>A code has been sent to</span> <small>*******9897</small> </div>
+                                            <div id="otp" class="inputs d-flex flex-row justify-content-center mt-2">
+                                                <input class="m-2 text-center form-control rounded" type="text"
+                                                    id="first" maxlength="1" />
+                                                <input class="m-2 text-center form-control rounded" type="text"
+                                                    id="second" maxlength="1" />
+                                                <input class="m-2 text-center form-control rounded" type="text"
+                                                    id="third" maxlength="1" />
+                                                <input class="m-2 text-center form-control rounded" type="text"
+                                                    id="fourth" maxlength="1" />
+                                                <input class="m-2 text-center form-control rounded" type="text"
+                                                    id="fifth" maxlength="1" />
+                                                <input class="m-2 text-center form-control rounded" type="text"
+                                                    id="sixth" maxlength="1" />
+                                            </div>
+                                        </div>
+
+                                        <div class="card-2">
+                                            <div class="content d-flex justify-content-center align-items-center">
+                                                <span>Didn't get the code</span> <a href="#"
+                                                    class="text-decoration-none ms-3">Resend(1/3)</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" data-bs-target="#" data-bs-toggle="modal">Done</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Sign Up
+                    Now</button>
+
+            </div>
+
+            <img src="/assets/five.jpg" class="img-fluid rounded float-start col-5" alt="food-picture">
+
+
+
+
+        </section>
+
+
+    </div>
+
+    <!-- Information Table -->
+
+    <table class="table container container-fluid">
+        <thead>
+            <tr>
+
+                <th style="background: rgb(211, 155, 42);" scope="col">First</th>
+                <th style="background: rgb(211, 155, 42);" scope="col">Last</th>
+                <th style="background: rgb(211, 155, 42);" scope="col">Handle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!-- Burger Cards -->
+
+    <div class="container mb-4">
+
+
+        <div class="container-fluid row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="/assets/six.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="/assets/eight.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="/assets/pexels-valeria-boltneva-1639562.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- carousel Code -->
+
+
+    <div class="container mb-4">
+
+
+
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button style="background: rgb(211, 155, 42)" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button style="background: rgb(211, 155, 42)" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button style="background: rgb(211, 155, 42)" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item bg-img-1 active">
+                    <!-- <img src="/assets/pexels-mat-brown-1395967.jpg"
+                        class="img-fluid col-lg-12 col-ml-4 ratio ratio-16x9" alt="retaurant-pictures"> -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item bg-img-2">
+                    <!-- <img src="/assets/pexels-marilena-baltzaki-15082377.jpg" class="img-fluid col-lg-12 col-ml-4  ratio   ratio-16x9" alt="retaurant-pictures"> -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item bg-img-3">
+                    <!-- <img src="/assets/pexels-desativado-2433980.jpg" class="img-fluid col-lg-12 col-ml-4  ratio ratio-16x9"   alt="retaurant-pictures"> -->
+                    <div class="carousel-caption d-none d-md-block">12
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+
+
+        </div>
+
+
+    </div>
+
+    <div class="container container-fluid">
+
+
+        <!-- This is the newsletter signup form  -->
+
+        <section id="Contact">
+
+
+            <form class="mb-5">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter Your E-mail">
+                    <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Name</label>
+                    <input type="Name" class="form-control" id="exampleInputPassword1" placeholder="Enter Your Name">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input border-dark" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Sign me up for newsletters</label>
+                </div>
+                <button type="submit" class="btn" style="background: rgb(211, 155, 42)">Submit</button>
+            </form>
+
+        </section>
+
+
+    </div>
+
+    <!--  FAQs -->
+
+    <div class="container-fluid mb-5">
+
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <option class="overflow-scroll" selected>Question 1</option>
+            <option class="overflow-scroll" value="1">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus explicabo commodi aliquam,
+                    praesentium debitis atque rem laborum quaerat eius nihil quisquam eligendi non cum mollitia
+                    laudantium dolor, at sapiente.</p>
+            </option>
+
+        </select>
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <option class="overflow-scroll" selected>Question 2</option>
+            <option class="overflow-scroll" value="1">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus explicabo commodi aliquam,
+                    praesentium debitis atque rem laborum quaerat eius nihil quisquam eligendi non cum mollitia
+                    laudantium dolor, at sapiente.</p>
+            </option>
+
+        </select>
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <option class="overflow-scroll" selected>Question 3</option>
+            <option class="overflow-scroll" value="1">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus explicabo commodi aliquam,
+                    praesentium debitis atque rem laborum quaerat eius nihil quisquam eligendi non cum mollitia
+                    laudantium dolor, at sapiente.</p>
+            </option>
+
+        </select>
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <option class="overflow-scroll" selected>Question 4</option>
+            <option class="overflow-scroll" value="1">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis doloribus explicabo commodi aliquam,
+                    praesentium debitis atque rem laborum quaerat eius nihil quisquam eligendi non cum mollitia
+                    laudantium dolor, at sapiente.</p>
+            </option>
+
+        </select>
+
+
+    </div>
+
+
+
+
+
+
+
+    <script src="JS/theme.js"></script>
+
+
+
+    <script src="JS/bootstrap.bundle.js"></script>
+</body>
+
+</html>
